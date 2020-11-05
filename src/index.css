@@ -1,13 +1,146 @@
+body,
+html {
+	overflow-x: hidden;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	background-color: rgb(131, 128, 128);
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+	background-color: black;
+	border-radius: 10px;
+}
+
+body::-webkit-scrollbar-button {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: white;
+	-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+.page {
+	padding: 10vh 0;
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(131, 128, 128);
+}
+
+.editor {
+	background-color: white;
+	width: 80%;
+	max-width: 500px;
+	height: 300px;
+	margin-bottom: 5vh;
+	border: black 5px solid;
+}
+
+.header {
+	width: 100%;
+	height: 5vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	background-color: black;
+	font-weight: 600;
+}
+
+.header div {
+	margin: 0 3px;
+}
+
+.editor textarea {
+	width: 99%;
+	height: 260px;
+}
+
+.editor textarea::-webkit-scrollbar {
+	background-color: white;
+	border-radius: 10px;
+	width: 10px;
+}
+
+.editor textarea::-webkit-scrollbar-track {
+	background-color: black;
+	border-radius: 10px;
+}
+
+.editor textarea::-webkit-scrollbar-button {
+	color: white;
+}
+
+.editor textarea::-webkit-scrollbar-thumb {
+	background-color: white;
+	-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+
+.preview {
+	background-color: white;
+	width: 90%;
+	max-width: 800px;
+	border: black 5px solid;
+}
+
+#render {
+	padding: 0 8px;
+}
+
+.hide {
+	display: none;
+}
+
+blockquote {
+	border-left: 3px solid #224b4b;
+	color: #224b4b;
+	padding-left: 5px;
+	margin-left: 25px;
+}
+
+code {
+	background: black;
+	color: white;
+	padding: 1px 4px 2px 4px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+pre {
+	background: black;
+	padding: 5px 0 5px 5px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td,
+th {
+	border: 2px solid;
+	padding-left: 5px;
+	padding-right: 5px;
 }
